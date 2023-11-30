@@ -12,7 +12,8 @@ class RotationY extends StatelessWidget {
   final Widget child;
   final double rotationY;
 
-  const RotationY({ Key? key, required this.child, this.rotationY = 0}) : super(key: key);
+  const RotationY({Key? key, required this.child, this.rotationY = 0})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

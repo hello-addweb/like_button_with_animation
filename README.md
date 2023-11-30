@@ -1,17 +1,3 @@
-`<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-
 # Like Button with animation
 
 ```like_button_with_animation```  is a Flutter package for icon like and dislike with animation and color change.✨
@@ -71,7 +57,7 @@ in your project's root directory.
 In your library add the following import:
 
 ```dart
-import 'package:custom_like_button/custom_like_button.dart';
+import 'package:custom_like_button/custom_like_button_with_animation.dart';
 ```
 
 For help getting started with Flutter, view the online [documentation](https://flutter.io/).
@@ -80,17 +66,16 @@ For help getting started with Flutter, view the online [documentation](https://f
 
 ```dart
 
-import 'package:custom_like_button/custom_like_button.dart';
-import 'package:flutter/material.dart';
-
-class LikeButtonCustom extends StatefulWidget {
-  const LikeButtonCustom({super.key});
+class LikeButtonWithAnimation extends StatefulWidget {
+  const LikeButtonWithAnimation({super.key});
 
   @override
-  State<LikeButtonCustom> createState() => _LikeButtonCustomState();
+  State<LikeButtonWithAnimation> createState() =>
+      _LikeButtonWithAnimationState();
 }
 
-class _LikeButtonCustomState extends State<LikeButtonCustom> {
+class _LikeButtonWithAnimationState
+    extends State<LikeButtonWithAnimation> {
   bool _isFavLiked = false;
   bool _isLikeLiked = false;
 
@@ -115,7 +100,7 @@ class _LikeButtonCustomState extends State<LikeButtonCustom> {
                     onTap: () => setState(() => _isFavLiked = !_isFavLiked),
 
                     /// you need to pass icons for back and front and isLiked true or false for animation
-                    child: CustomLikeButton(
+                    child: CustomLikeButtonWithAnimation(
                       /// isLiked = true;
                       front: const Icon(
                         Icons.favorite,
@@ -133,7 +118,7 @@ class _LikeButtonCustomState extends State<LikeButtonCustom> {
                     onTap: () => setState(() => _isLikeLiked = !_isLikeLiked),
 
                     /// you need to pass icons for back and front and isLiked true or false for animation
-                    child: CustomLikeButton(
+                    child: CustomLikeButtonWithAnimation(
                       /// isLiked = true;
                       front: const Icon(
                         Icons.thumb_up_alt_sharp,
@@ -167,5 +152,5 @@ class _LikeButtonCustomState extends State<LikeButtonCustom> {
 |-----------|:------------------------------------------------------------|:--------------------------------------------------------------------|:--------:|
 | isLiked   | -                                                           | isLiked true, false for icon .                                      |   true   |
 | frontIcon | -                                                           | Icon when isLiked = true.pass icon color, size and other property.  |   true   |
-| backIcon  | -                                                           | Icon when isLiked = false.pass icon color, size and other property. |   true   |                                      |  false   |
-`# like_button_with_animation
+| backIcon  | -                                                           | Icon when isLiked = false.pass icon color, size and other property. |   true   |
+

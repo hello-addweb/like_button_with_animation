@@ -1,4 +1,4 @@
-import 'package:example/custom_like_button_with_animation.dart';
+import 'package:example/like_button_with_animation.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       ),
       builder: (BuildContext c, Widget? w) {
         final MediaQueryData data = MediaQuery.of(c);
-        return const CustomLikeButtonWithAnimation();
+        return const LikeButtonWithAnimation();
       },
     );
   }

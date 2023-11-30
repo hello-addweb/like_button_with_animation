@@ -1,14 +1,15 @@
 import 'package:custom_like_button/custom_like_button.dart';
 import 'package:flutter/material.dart';
 
-class CustomLikeButtonWithAnimation extends StatefulWidget {
-  const CustomLikeButtonWithAnimation({super.key});
+class LikeButtonWithAnimation extends StatefulWidget {
+  const LikeButtonWithAnimation({super.key});
 
   @override
-  State<CustomLikeButtonWithAnimation> createState() => _CustomLikeButtonWithAnimationState();
+  State<LikeButtonWithAnimation> createState() =>
+      _LikeButtonWithAnimationState();
 }
 
-class _CustomLikeButtonWithAnimationState extends State<CustomLikeButtonWithAnimation> {
+class _LikeButtonWithAnimationState extends State<LikeButtonWithAnimation> {
   bool _isFavLiked = false;
   bool _isLikeLiked = false;
 
@@ -33,7 +34,7 @@ class _CustomLikeButtonWithAnimationState extends State<CustomLikeButtonWithAnim
                     onTap: () => setState(() => _isFavLiked = !_isFavLiked),
 
                     /// you need to pass icons for back and front and isLiked true or false for animation
-                    child: CustomLikeButton(
+                    child: CustomLikeButtonWithAnimation(
                       /// isLiked = true;
                       front: const Icon(
                         Icons.favorite,
@@ -51,7 +52,7 @@ class _CustomLikeButtonWithAnimationState extends State<CustomLikeButtonWithAnim
                     onTap: () => setState(() => _isLikeLiked = !_isLikeLiked),
 
                     /// you need to pass icons for back and front and isLiked true or false for animation
-                    child: CustomLikeButton(
+                    child: CustomLikeButtonWithAnimation(
                       /// isLiked = true;
                       front: const Icon(
                         Icons.thumb_up_alt_sharp,

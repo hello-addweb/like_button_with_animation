@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 ///  An Animation is an abstract class that understands its current value and its state.
@@ -8,6 +7,7 @@ class AnimationBuilder extends StatelessWidget {
 
   /// child is icon and it is in animation constructor with child param.
   const AnimationBuilder({Key? key, required this.child}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(

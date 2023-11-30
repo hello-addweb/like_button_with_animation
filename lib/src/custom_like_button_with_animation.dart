@@ -2,14 +2,13 @@
 ///  create by addWeb on 2023/11/28
 ///
 import 'package:custom_like_button/custom_like_button.dart';
-import 'package:custom_like_button/src/animation/rotation.dart';
 import 'package:flutter/material.dart';
 
 /// customLikeButton is for animation on icon.
-class CustomLikeButton extends StatefulWidget {
-  const CustomLikeButton(
+class CustomLikeButtonWithAnimation extends StatefulWidget {
+  const CustomLikeButtonWithAnimation(
       {super.key,
-      required  this.isLiked,
+      required this.isLiked,
       required this.front,
       required this.back});
 
@@ -18,10 +17,12 @@ class CustomLikeButton extends StatefulWidget {
   final bool isLiked;
 
   @override
-  State<CustomLikeButton> createState() => _CustomLikeButtonState();
+  State<CustomLikeButtonWithAnimation> createState() =>
+      _CustomLikeButtonWithAnimationState();
 }
 
-class _CustomLikeButtonState extends State<CustomLikeButton> {
+class _CustomLikeButtonWithAnimationState
+    extends State<CustomLikeButtonWithAnimation> {
   @override
   Widget build(BuildContext context) {
     /// TweenAnimation
