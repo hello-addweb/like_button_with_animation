@@ -1,6 +1,6 @@
 name: custom_like_button
 description: A Like Button with animation is to apply custom(different) icon with color, size and flip animation.
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/hello-addweb/like_button_with_animation
 
 environment:
