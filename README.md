@@ -74,8 +74,7 @@ class LikeButtonWithAnimation extends StatefulWidget {
       _LikeButtonWithAnimationState();
 }
 
-class _LikeButtonWithAnimationState
-    extends State<LikeButtonWithAnimation> {
+class _LikeButtonWithAnimationState extends State<LikeButtonWithAnimation> {
   bool _isFavLiked = false;
   bool _isLikeLiked = false;
 

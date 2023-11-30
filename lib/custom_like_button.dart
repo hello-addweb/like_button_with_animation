@@ -2,5 +2,5 @@
 library custom_like_button;
 
 export 'src/custom_like_button_with_animation.dart';
-export 'src/animation/animationbuilder.dart';
+export 'src/animation/animation_builder.dart';
 export 'src/animation/rotation.dart';
